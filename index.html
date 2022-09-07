@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Tip calculator app</title>
+
+  <link rel="stylesheet" href="./index.css">
+
+  <script defer async src="./index.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <figure>
+      <img src="./images/logo.svg" alt="Logo Splitter">
+    </figure>
+  </header>
+
+  <main>
+    <form class="calculator">
+      <fieldset>
+        <legend>Tip Calculator</legend>
+        <div class="container-input">
+          <label for="input-bill">Bill</label>
+          <span class="invalid">Can't be zero!</span>
+          <input type="text" pattern="^[0-9]*\.?[0-9]*$" id="input-bill" placeholder="0" autocomplete="off">
+          <img class="input__icon" src="./images/icon-dollar.svg" />
+        </div>
+
+        <div class="select-tip">
+          <label>Select Tip %</label>
+          <ul class="select-tip__options">
+            <li><span>5%</span></li>
+            <li><span>10%</span></li>
+            <li><span>15%</span></li>
+            <li><span>25%</span></li>
+            <li><span>50%</span></li>
+            <input type="text" id="input-custom-tip" pattern="^[0-9]*\.?[0-9]*$" placeholder="Custom" autocomplete="off">
+          </ul>
+        </div>
+
+        <div class="container-input">
+          <label for="input-number-of-people">Number of People</label>
+          <span class="invalid">Can't be zero!</span>
+          <input type="text" pattern="^[0-9]*\.?[0-9]*$" id="input-number-of-people" placeholder="0" autocomplete="off">
+          <img class="input__icon" src="./images/icon-person.svg" />
+        </div>
+      </fieldset>
+
+      <div class="result">
+        <div class="result__tip-amount">
+          <span>Tip Amount
+            <small>/ person</small>
+          </span>
+
+          <div class="total">
+            <img src="./images/icon-dollar.svg">
+            <span id="total-tip-amount">0.00</span>
+          </div>
+        </div>
+
+        <div class="result__total">
+          <span>Total
+            <small>/ person</small>
+          </span>
+
+          <div class="total">
+            <img src="./images/icon-dollar.svg">
+            <span id="total">0.00</span>
+          </div>
+        </div>
+
+        <button class="btn-reset">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/emanuel-marques-541617215/">Emanuel Marques</a>.
+  </footer>
+</body>
+
+</html>

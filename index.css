@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(185deg, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  user-select: none;
+}
+
+fieldset {
+  border: 0;
+}
+fieldset legend {
+  visibility: hidden;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+main {
+  margin: 2rem auto;
+  width: min(60rem, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+main form.calculator {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(0deg, 0%, 100%);
+}
+main form.calculator fieldset {
+  width: 100%;
+}
+main form.calculator fieldset input {
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(189deg, 41%, 97%);
+  transition: border-color 0.2s;
+}
+main form.calculator fieldset input:hover {
+  border-color: hsl(184deg, 14%, 56%);
+}
+main form.calculator fieldset input:invalid {
+  border-color: red;
+  animation: shake-invalid 0.2s forwards;
+}
+@keyframes shake-invalid {
+  25% {
+    transform: translate(5px);
+  }
+  50% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+main form.calculator label {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+}
+main form.calculator .container-input {
+  position: relative;
+  margin-bottom: 2rem;
+}
+main form.calculator .container-input input {
+  width: 100%;
+  margin-top: 0.8rem;
+  padding: 0.4rem;
+}
+main form.calculator .container-input span.invalid {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  color: red;
+}
+main form.calculator .container-input img.input__icon {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+main form.calculator .select-tip {
+  margin-bottom: 2rem;
+}
+main form.calculator .select-tip ul.select-tip__options {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  font-size: 1.5rem;
+}
+main form.calculator .select-tip ul.select-tip__options li {
+  height: 3rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  transition: background-color 0.5s;
+}
+main form.calculator .select-tip ul.select-tip__options li:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(185deg, 41%, 84%);
+}
+main form.calculator .select-tip ul.select-tip__options li.--active {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+}
+main form.calculator .select-tip ul.select-tip__options input#input-custom-tip {
+  height: 3rem;
+  padding: 0.6rem;
+}
+main form.calculator div.result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(183deg, 100%, 15%);
+}
+main form.calculator div.result .result__tip-amount,
+main form.calculator div.result .result__total {
+  display: flex;
+  justify-content: space-between;
+}
+main form.calculator div.result .result__tip-amount span small,
+main form.calculator div.result .result__total span small {
+  color: hsl(172deg, 67%, 45%);
+  display: block;
+}
+main form.calculator div.result .result__tip-amount .total,
+main form.calculator div.result .result__total .total {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+main form.calculator div.result .result__tip-amount .total img,
+main form.calculator div.result .result__total .total img {
+  width: 0.9rem;
+}
+main form.calculator div.result .result__tip-amount .total span,
+main form.calculator div.result .result__total .total span {
+  color: hsl(172deg, 67%, 45%);
+}
+main form.calculator div.result .result__total {
+  margin-top: 1.8rem;
+}
+main form.calculator div.result .btn-reset {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+  transition: background-color 0.3s;
+}
+main form.calculator div.result .btn-reset:hover {
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (min-width: 800px) {
+  main form.calculator {
+    height: 31rem;
+    flex-direction: row;
+    border-radius: 1.5rem;
+    gap: 2rem;
+  }
+  main form.calculator div.result {
+    padding: 2rem;
+  }
+  main form.calculator div.result .btn-reset {
+    margin-top: auto;
+  }
+  main form.calculator div.result .result__tip-amount,
+main form.calculator div.result .result__total {
+    align-items: center;
+  }
+  main form.calculator div.result .result__tip-amount .total,
+main form.calculator div.result .result__total .total {
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
