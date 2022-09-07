@@ -19,6 +19,5 @@ package-lock.json
 package.json
 node_modules/
 design/
-images/
 style-guide.md
 index.css.map
