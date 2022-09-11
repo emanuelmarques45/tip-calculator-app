@@ -34,7 +34,9 @@ Users should be able to:
 
 #### Mobile Layout
 
-![Mobile](https://github.com/emanuelm45/portfolio-images/blob/main/tip-calculator-app/mobile.png)
+<p align="center">
+  <img src="https://github.com/emanuelm45/portfolio-images/blob/main/tip-calculator-app/mobile.png">
+</p>
 
 ### Links
 
