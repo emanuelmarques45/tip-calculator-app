@@ -54,7 +54,6 @@ const calculateTip = () => {
         setTotal(0, 0)
         return
     }
-    console.log(inputBill.value, inputPeople.value, optionValue)
     const billAmount = parseFloat(inputBill.value)
     let peopleNumber = parseInt(inputPeople.value)
 
