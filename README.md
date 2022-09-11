@@ -64,5 +64,5 @@ I intend to focus on improving my JS code and to do it more clear.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@emanuelm45](https://www.frontendmentor.io/profile/@emanuelm45)
 - LinkedIn - [Emanuel Marques](https://www.linkedin.com/in/emanuel-marques-541617215/)
