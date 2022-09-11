@@ -48,7 +48,6 @@ inputCustomOption.addEventListener('keyup', () => {
     calculateTip()
 })
 
-
 const calculateTip = () => {
     if (inputBill.value == '' || inputPeople.value == '' || optionValue == '') {
         setTotal(0, 0)
