@@ -28,20 +28,20 @@ Users should be able to:
 
 #### Desktop Layout 
 
-![Desktop](https://github.com/emanuelm45/portfolio-images/blob/main/tip-calculator-app/desktop.png)
+![Desktop](https://github.com/emanuelmarques45/portfolio-images/blob/main/tip-calculator-app/desktop.png)
 
-![Desktop-2](https://github.com/emanuelm45/portfolio-images/blob/main/tip-calculator-app/desktop2.png)
+![Desktop-2](https://github.com/emanuelmarques45/portfolio-images/blob/main/tip-calculator-app/desktop2.png)
 
 #### Mobile Layout
 
 <p align="center">
-  <img src="https://github.com/emanuelm45/portfolio-images/blob/main/tip-calculator-app/mobile.png">
+  <img src="https://github.com/emanuelmarques45/portfolio-images/blob/main/tip-calculator-app/mobile.png">
 </p>
 
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-using-css-grid-and-flexbox-327IMyAuQ1
-- Live Site URL: https://emanuelm45.github.io/tip-calculator-app/
+- Live Site URL: https://emanuelmarques45.github.io/tip-calculator-app/
 ## My process
 
 ### Built with
